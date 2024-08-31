@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(216, 30, 30), orange, yellow, green, blue, indigo, violet);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    color: red;
+    font-size: 36px;
+}
+
+header p {
+    color: #ffcc00;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+main {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-input input {
+    flex: 1;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.task-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: #218838;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#task-list li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+#task-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#task-list li button {
+    background-color: red;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;        
+    border-radius: 4px;
+}
+
+#task-list li button:hover {
+    background-color: #c82333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: red;
+    font-size: 14px;
+    margin-top: 20px;
+}
